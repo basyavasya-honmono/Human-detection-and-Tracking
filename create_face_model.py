@@ -9,7 +9,8 @@ import argparse
 
 cascadePath = "face_cascades/haarcascade_profileface.xml"
 faceCascade = cv2.CascadeClassifier(cascadePath)
-recognizer = cv2.face.createLBPHFaceRecognizer()
+#recognizer = cv2.face.createLBPHFaceRecognizer()
+recognizer = cv2.face.LBPHFaceRecognizer_create()
 
 
 def get_images_and_labels(path):
